@@ -1,0 +1,84 @@
+body section {
+    font-family: "Comic Sans MS";
+}
+
+body header {
+    text-align: center;
+    background-image: url(image/cloud-heart.png);
+    background-repeat:no-repeat;
+    background-position:5rem 5rem;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+p {
+    font-size : 1rem;
+    margin-inline: 1rem;
+
+}
+
+.tx-countdown {
+    display: inline-flex;
+}
+.tx-countdown p {
+    font-family: 'Staatliches', cursive;
+    margin-left: 3rem;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    font-size: 1.3rem;
+    list-style: none;
+    margin: auto;
+    background: #f4d695;
+    padding: 0.5em;
+    border: 1px solid #ff8790;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+.accueil {
+    display: inline-flex;
+}
+
+#side_right {
+    display:block;
+	float:left;
+	border-style: solid;
+	border-color: #ff8790;
+	width: 15rem;
+	height: 15rem;
+}
+
+footer {
+    background-color: gainsboro;
+}
+footer p {
+    padding-top: 1em;
+    font-size : 1rem;
+}
+
+footer nav ul {
+    display: inline-flex;
+}
+
+footer ul li {
+    font-size: 0.7rem;
+    list-style: none;
+    margin: auto;
+    padding: 0.5em;
+
+@media  (max-width: 961px) {
+    .menu ul {
+    display: inline-block;
+
+    }

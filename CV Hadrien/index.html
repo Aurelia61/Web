@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head contient les info du site qui ne sont pas des contenu -->
+
+<head>
+    <!-- j'importe le type utf 8 pour comprendre les accent et caractere speciaux -->
+    <meta charset="UTF-8">
+    <!-- gestion du responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre du cv -->
+    <title>Mon CV</title>
+    <!-- import de ma feuille de style css -->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Identité du site -->
+    <header>
+        <!-- balise de h1 a h7 sont les titre -->
+        <div class="banner">
+            <h1>Hadrien HERBET</h1>
+            <h2>25 ans | Développeur Web/Python</h2>
+        </div>
+
+        <!-- les images sont affichées avec la balise img: 
+            src est l'attribut qui correspond a la source de l'image
+            alt est l'attribut pour les non voyant
+            title est le contenu afficher dans l'infobulle de la souris
+            title est aussi le contnu afficher si la co n'est pas suffisante -->
+        <img src="photo.PNG" alt="photo de moi" title="photo de moi, achete toi une co" class="moi">
+    </header>
+
+    <nav>
+        <!-- menu du site -->
+        <!-- ul correspond a une liste a puce
+        ol correspond a une liste ordoné
+        et les li sont les elements de la liste -->
+        <!-- <ul>
+            <li>premier lien</li>
+            <li>deuxieme lien</li>
+            <li>troisieme lien</li>
+            <li>quatrieme lien</li>
+            <li>cinquieme lien</li>
+        </ul>
+        <ol>
+            <li>pichu</li>
+            <li>pikachu</li>
+            <li>raichu</li>
+            <li>raichu d'alola</li>
+        </ol> -->
+        <ul>
+            <li><a href="#My_history">Mon histoire</a></li>
+            <li><a href="#My_project">Mon project</a></li>
+            <li><a href="#My_jobs">Mes experience</a></li>
+            <li><a href="#My_video">Ma video</a></li>
+            <li><a href="#My_map">Ma map</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- contenu du site -->
+        <!-- les articles et section sont des parti de mon site
+        l'attribue class correspond a la catégorie de l'element
+        et l'attribue id correspond a son "code barre unique" -->
+        <article class="text_about_me">
+            <section class="story" id="My_history">
+                <h2>Mon histoire</h2>
+                <!-- p est la balise de paragraphe 
+                b est la balise gras
+                i est la balise italique -->
+                <p>mon <b>histoire</b> est <i>nul</i> de chez nul</p>
+            </section>
+
+
+            <!-- je créer une div vide a laquel je donnerait plus tard une dimention graphique -->
+            <div class="separator" />
+
+            <section class="project" id="My_project">
+                <h2>text</h2>
+                <p>Lorem, ipsum dolor sit amet <span class="item_bold">consectetur</span> adipisicing elit. Excepturi quod officiis dolore praesentium
+                    officia dolorum, aspernatur architecto vitae error recusandae eos eligendi voluptatum et eveniet
+                    doloremque voluptatem nesciunt optio inventore.</p>
+            </section>
+        </article>
+
+        <article class="expe">
+            <section id="My_jobs">
+                <h2>Experience</h2>
+                <!-- une table est un tableur exel
+                on commence par declarer la table par <table>
+                ensuite on fait la ligne titre avec <thead>
+                <tr> pour la ligne
+                et <th> par colone
+                ensuite pour le core du tableau on met <tbody>
+                et <tr> pour chaque ligne ainsi que <td> pour chaque colonne -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entreprise</th>
+                            <th>Poste</th>
+                            <th>Année</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Groupe Up</td>
+                            <td>Integrateur web</td>
+                            <td class="item_bold">2018</td>
+                        </tr>
+                        <tr>
+                            <td>Regie des quartiers Alenconnaise</td>
+                            <td>Glandeur pro</td>
+                            <td class="item_bold">2017-2018</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft</td>
+                            <td>Prof de code</td>
+                            <td class="item_bold">2017</td>
+                        </tr>
+                        <tr>
+                            <td>Synchrone</td>
+                            <td>Dev php</td>
+                            <td class="item_bold">2015-2017</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+
+        <article class="youtube" id="My_video">
+            <!-- pour afficher une video youtube, aller sur le site, partager et le bouton intégrer -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MYZ67-Sh7kM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+
+        <article class="map" id="My_map">
+            <!-- pour afficher une map de google aller sur google map et une fois l'adresse choisi aller dans partager et integrer -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.557322324796!2d0.094951515538046!3d48.4074437792458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e20ca50b3b297f%3A0x4802c8b7d1ba88c6!2sPlaine%20des%20Sports!5e0!3m2!1sfr!2sfr!4v1603117556827!5m2!1sfr!2sfr"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </article>
+    </main>
+
+    <footer>
+        <!-- pied de page du site -->
+        <!-- pour faire un lien utiliser la balise <a>
+            l'attribut href pour la destination du site
+            target="_blank" si on veux rediriger sur un autre onglet  -->
+        <p>voici le <a href="http://www.france-ioi.org/user/perso.php?sLogin=elem" target="_blank">lien</a> du linkedin
+            du createur de ce site</p>
+    </footer>
+</body>
+
+</html>

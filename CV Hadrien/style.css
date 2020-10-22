@@ -1,0 +1,113 @@
+body {
+    /* mettre uen couleur en background */
+    /* background: #000; */
+    /* mettre une photo en background */
+    /* background-image: url("background.jpg");
+    background-size: contain; */
+    /* mettre un gradué */
+    background: linear-gradient(blue, yellow, green);
+    /* changer la police des text */
+    font-family: 'Lemonada', cursive;
+    /* gere les espace autour de mon element */
+    margin: 0;
+    /* gere les espace a l'interieur de mon element */
+    padding: 0;
+}
+
+header {
+    /* créer un arondi en bas a gauche */
+    border-bottom-left-radius: 20em;
+    /* créer une bordure */
+    border: 10px solid white;
+    background: linear-gradient( green, yellow, blue);
+    /* definit une hauteur et largeur */
+    height: 325px;
+    width: 98.66%;
+}
+
+header .banner {
+    /* le principe de flotage, comme la piscine */
+    float: left;
+    /* permet de positioner mes element en ligne */
+    display: inline-flex;
+    width: 66%;
+    padding: 0 5px;
+}
+
+header .banner h1 {
+    /* change la couleur d'un text */
+    color: #fff;
+}
+
+header .banner h2 {
+    margin: auto;
+}
+
+header img {
+    float: right;
+    height: 20em;
+    width: 30em;
+    border-radius: 50%;
+}
+
+
+nav ul {
+    display: inline-flex;
+    width: 98.66%;
+}
+
+nav ul li {
+    /* enleve les pointeur de la liste */
+    list-style: none;
+    margin: auto;
+    background: #000;
+    padding: 10px 30px;
+    /* gere la transparance */
+    opacity: 0.5;
+    border: 1px solid red;
+}
+
+nav ul li:hover {
+    background: grey;
+    opacity: 1;
+}
+
+nav ul li a {
+    /* retirer les soulignement de text */
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+
+main .text_about_me {
+    /* centre le contenue */
+    text-align: center;
+    /* met en gras */
+    font-weight: bold;
+    /* met en italic */
+    font-style: italic;
+}
+
+main .text_about_me p {
+    /* !important permet de vraiment appliquer cette regle en priorité */
+    color: white !important;
+}
+
+table {
+    border: 1px solid black;
+}
+
+table th {
+    color: white;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    width: 220px;
+    text-align: center;
+}
+
+.item_bold {
+    color: green;
+}
