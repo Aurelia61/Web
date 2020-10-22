@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+}
+
+h2 span{
+    font-size: 17px;
+}
+
+
+.rectangle{
+    width:700px;
+	height:130px;
+	background-color: gainsboro;
+}
+
+.fellows{
+    text-align: center;
+}
+
+.square{
+    display: inline-block;
+    width:150px;
+	height:190px;
+	background-color: gainsboro;
+    margin-left: 20px;
+    margin-bottom: 90px;
+}
+
+
+body nav ul {
+    background-color: grey;
+    color : white;
+    list-style: none;
+    text-align: left;
+}
+
+form {
+    text-align: center;
+}
+
+form h2{
+    text-align: left;
+}
+body nav ul li {
+    display: inline-block;
+    line-height: 2;
+    margin-right: 5%;
+}
+
+ul :hover{
+    background-color: lavender;
+}
+
+@media (max-width: 961px) {
+    .rectangle{
+        display: none;
+    }
+    .square{
+        display: none;
+    }
+    .fellows{
+        font-size: 30px;
+    }
+    h2 span{
+        font-size: 22px;
+    }
+    
+    form h2{
+        text-align: center;
+    }
+}
