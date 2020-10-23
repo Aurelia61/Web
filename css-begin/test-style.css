@@ -1,0 +1,9 @@
+.dog-img {
+    transition-duration: 8s;
+    width: 500px;
+}
+
+.dog-img:hover {
+    width: 550px;
+    transform: rotate(180deg);
+}

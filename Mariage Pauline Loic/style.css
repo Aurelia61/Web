@@ -68,6 +68,11 @@ p {
 	height: 15rem;
 }
 
+#wedding-rings {
+    display:block;
+    width: 15rem;
+}
+
 footer {
     background-color: gainsboro;
 }
