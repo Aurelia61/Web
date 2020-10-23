@@ -4,9 +4,14 @@ body section {
 
 body header {
     text-align: center;
-    background-image: url(image/cloud-heart.png);
+    background: url(image/cloud-heart-crop.png);
     background-repeat:no-repeat;
-    background-position:5rem 5rem;
+    background-size: cover;
+    /* background-position:5rem 5rem; */
+}
+
+body header img {
+    width: 100%;
 }
 
 h1 {
@@ -30,15 +35,19 @@ p {
 
 .menu ul {
     display: inline-flex;
+    width: 100%;
+    padding-inline-start: 0px;
+    margin-bottom: 0px;
 }
 
 .menu ul li {
     font-size: 1.3rem;
     list-style: none;
-    margin: auto;
+    /* margin: auto; */
     background: #f4d695;
     padding: 0.5em;
     border: 1px solid #ff8790;
+    width : 100%;
 }
 
 .menu ul li a {
