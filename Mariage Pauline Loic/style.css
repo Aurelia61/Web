@@ -1,5 +1,6 @@
 body section {
     font-family: "Comic Sans MS";
+    display: inline-flex;
 }
 
 body header {
@@ -56,21 +57,31 @@ p {
 }
 
 .accueil {
-    display: inline-flex;
+    text-align: center;
+    display:block;
 }
 
-#side_right {
-    display:block;
-	float:left;
+#img_couple {
+    /* display:block; */
+	/* float:left; */
 	border-style: solid;
 	border-color: #ff8790;
 	width: 15rem;
 	height: 15rem;
 }
 
+aside{
+    float: right;
+}
+
 #wedding-rings {
-    display:block;
+    /* display:block; */
     width: 15rem;
+    transition-duration: 8s;
+}
+
+#wedding-rings :hover{
+    transform: rotate(180deg);
 }
 
 footer {
@@ -91,8 +102,7 @@ footer ul li {
     margin: auto;
     padding: 0.5em;
 
-@media  (max-width: 961px) {
+@media only screen and (max-width: 961px) {
     .menu ul {
     display: inline-block;
-
     }
