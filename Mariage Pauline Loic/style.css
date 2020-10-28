@@ -1,18 +1,33 @@
-body section {
-    font-family: "Comic Sans MS";
-    display: inline-flex;
+body{
+    margin:0;
+    padding:0
 }
 
+body section {
+    font-family: "Comic Sans MS";
+    /* display: inline-flex; */
+}
+
+/** HEADER **/
 body header {
     text-align: center;
-    background: url(image/cloud-heart-crop.png);
+    background: url(images/cloud-heart-crop.png);
     background-repeat:no-repeat;
     background-size: cover;
-    /* background-position:5rem 5rem; */
+    /**** header always visible
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; */
 }
 
 body header img {
     width: 100%;
+}
+
+.countdown{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
 }
 
 h1 {
@@ -20,6 +35,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
 }
+
 p {
     font-size : 1rem;
     margin-inline: 1rem;
@@ -34,6 +50,8 @@ p {
     margin-left: 3rem;
 }
 
+/* .menu{} */
+
 .menu ul {
     display: inline-flex;
     width: 100%;
@@ -42,6 +60,7 @@ p {
 }
 
 .menu ul li {
+    /* vertical-align: bottom; */
     font-size: 1.3rem;
     list-style: none;
     /* margin: auto; */
@@ -51,9 +70,16 @@ p {
     width : 100%;
 }
 
+.menu ul li img{
+    display: inline-flex;
+    list-style: none;
+    width: 5rem
+}
 .menu ul li a {
     text-decoration: none;
     color:black;
+    display: inline-flex;
+    /* display: medium; */
 }
 
 .accueil {
@@ -70,8 +96,14 @@ p {
 	height: 15rem;
 }
 
-aside{
-    float: right;
+aside img {
+    position:fixed;
+    right:0;
+    top: 21.18rem;
+    width: 15rem;
+    /* position: -webkit-sticky;
+    position: sticky;
+    bottom:2px; */
 }
 
 #wedding-rings {

@@ -10,7 +10,7 @@
     <!-- discription of the page -->
     <meta name="description" content="Site pour le mariage de Pauline et Loïc">
     <!-- import favicon -->
-    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <!-- to manage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- import CSS file -->
@@ -25,44 +25,49 @@
 
 <body>
     <header>
-        <img src="image/banniere.png" alt="Le mariage sera célébré le 22 mai 2021 à Serans">
-
-        <section class="tx-countdown">
-            <p>JOUR</p>
-            <p>HEURE</p>
-            <p>MINUTE</p>
-            <p>SECONDE</p>
-        </section>
-
         <section>
-            <!-- <pre> -->
-            <span>
-                <font size="50">
-                    <font face="arial">
-                        <font color="#000000">
-                            <div align="center">
-                                <center>
-                                    <script language="JavaScript">
-                                        TargetDate = "05/22/2021 2:59 PM";
-                                        BackColor = false;
-                                        ForeColor = false;
-                                        CountActive = true;
-                                        CountStepper = -1;
-                                        LeadingZero = true;
-                                        DisplayFormat = "%%D%% &nbsp; %%H%% &nbsp; %%M%% &nbsp; %%S%% ";
-                                        FinishMessage = "C'est le grand jour !";
-                                    </script>
-                                    <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-                                    </script>
-                                </center>
-                            </div>
-            </span>
-            <!-- </pre> -->
+            <img src="images/banner.png" alt="Le mariage sera célébré le 22 mai 2021 à Serans">
         </section>
 
+        <section class=countdown>
+            <article class="tx-countdown">
+                <span class="jour">JOUR</p>
+                <span class="heure">HEURE</p>
+                <p class="minute">MINUTE</p>
+                <p class="seconde">SECONDE</p>
+            </article>
+
+            <article>
+                <!-- <pre> -->
+                <span>
+                    <font size="50">
+                        <font face="arial">
+                            <font color="#000000">
+                                <div align="center">
+                                    <center>
+                                        <script language="JavaScript">
+                                            TargetDate = "05/22/2021 2:59 PM";
+                                            BackColor = false;
+                                            ForeColor = false;
+                                            CountActive = true;
+                                            CountStepper = -1;
+                                            LeadingZero = true;
+                                            DisplayFormat = "%%D%% &nbsp; %%H%% &nbsp; %%M%% &nbsp; %%S%% ";
+                                            FinishMessage = "C'est le grand jour !";
+                                        </script>
+                                        <script language="JavaScript"
+                                            src="http://scripts.hashemian.com/js/countdown.js">
+                                            </script>
+                                    </center>
+                                </div>
+                </span>
+                <!-- </pre> -->
+            </article>
+        </section>
         <nav class="menu">
             <ul>
-                <li><a href="MODIFY.com">Accueil</a></li>
+                <li><img src="images/img-home.png" /></li>
+                <!-- <li><a href="MODIFY.com">Accueil</a></li> -->
                 <li><a href="MODIFY.com">Programme</a></li>
                 <li><a href="MODIFY.com">Inscription</a></li>
                 <li><a href="MODIFY.com">Où dormir</a></li>
@@ -85,11 +90,13 @@
                 Nous nous réjouissons d'avance de partager ces moments avec chacun de vous !<br>
             </p>
             <p>
-                <img id="img_couple" src="image/couple.png" alt="c'est beau l'amour...">
+                <img id="img_couple" src="images/couple.png" alt="c'est beau l'amour...">
             </p>
         </section>
         <aside>
-            <img id="wedding-rings" src="image/wedding-rings.jpeg" alt="Alliances">
+            <figure>
+                <img src="images/wedding-rings.jpeg" alt="Alliances">
+            </figure>
         </aside>
     </main>
 

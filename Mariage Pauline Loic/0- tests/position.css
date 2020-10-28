@@ -1,0 +1,9 @@
+.container {
+  display: inline-flex; 
+  flex-direction: column;
+  flex-wrap:nowrap;
+}
+
+.item {
+  flex-grow: 1;
+}
