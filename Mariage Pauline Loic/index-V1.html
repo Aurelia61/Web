@@ -14,7 +14,7 @@
     <!-- to manage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- import CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-V1.css">
     <!-- police style : Courgette -->
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <!-- police style : Staatliches -->
@@ -26,13 +26,10 @@
 <body>
     <header>
         <figure>
-            <img src="images/banner.png" alt="Le mariage sera célébré le 22 mai 2021 à Serans">
+            <img src="images/banner1800x600.png" alt="Le mariage sera célébré le 22 mai 2021 à Serans">
         </figure>
 
         <section class="countdown">
-            <p>
-                Notre mariage sera célébré dans :
-            </p> 
             <article class="countdown-tx">
                 <span class="jour">JOUR</span>
                 <span class="heure">HEURE</span>
@@ -69,18 +66,20 @@
         </section>
         <nav class="menu">
             <ul>
-                <li><a class="tab_home" href="index.html"><img class="img_home" src="images/img-home.png"/></a></li>
+                <li><img class="img_home" src="images/img-home.png"/></li>
                 <!-- <li><a href="MODIFY.com">Accueil</a></li> -->
-                <li class="tab_tx"><a href="programme.html">Programme</a></li>
-                <li class="tab_tx"><a href="inscription.html">Inscription</a></li>
-                <li class="tab_tx"><a href="dormir.html">Où dormir</a></li>
+                <li class="tab_rotate_z"><a class="tab_programme" href="MODIFY.com">Programme</a></li>
+                <li class="tab_rotate_z"><a href="MODIFY.com">Inscription</a></li>
+                <li class="tab_rotate_z"><a href="MODIFY.com">Où dormir</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>
+            <MARQUEE SCROLLAMOUNT="100" >
                 Bienvenue à tous !
+            </MARQUEE>
         </h1>
         <section class="accueil">
             <figure>
@@ -102,7 +101,12 @@
                 <img class="img_bisous" src="images/bisous.png" alt="c'est beau l'amour...">
             </figure>
         </section>
-
+        <aside>
+            
+            <figure>
+                <img class = "img_cloud" src="images/cloud-heart.png" alt="Un beau nuage en forme de coeur">
+            </figure>
+        </aside>
     </main>
 
     <footer>
