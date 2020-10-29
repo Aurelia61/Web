@@ -116,6 +116,15 @@ aside img {
     transform: rotate(180deg);
 }
 
+.img_couple {
+    width: 200px;
+    transition: width 3s linear;
+}
+
+.img_couple:hover{
+    width: 300px;
+}
+
 footer {
     background-color: gainsboro;
 }
