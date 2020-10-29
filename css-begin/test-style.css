@@ -7,3 +7,22 @@
     width: 550px;
     transform: rotate(180deg);
 }
+
+
+/*
+Mise à l'échelle ::
+Tu peux changer l'échelle en utilisant la propriété scale avec la transformation css :
+→ transform: scale(1.5);
+
+Déplacer ::
+Tu peux déplacer un élément horizontalement et verticalement en utilisant transform. Celle-ci est utile quand tu veux faire bouger tes éléments :
+→ transform : translate(200px,200px) ;
+
+Incliner::
+Skewing permet d'incliner l'élément :
+→ transform: skew(20deg,10deg);
+
+Combiner plusieurs propriétés::
+Tu peux combiner plusieurs propriétés en une seule fois dans ta transformation :
+→ transform: rotate(10deg) scale(1.5);
+*/
