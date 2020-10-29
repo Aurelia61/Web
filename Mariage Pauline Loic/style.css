@@ -1,33 +1,25 @@
+/** HTML Semantic Elements **/
+/** ______________________ **/
+
 body{
     margin:0;
     padding:0
 }
 
-body section {
-    font-family: "Comic Sans MS";
-    /* display: inline-flex; */
-}
-
-/** HEADER **/
 body header {
     text-align: center;
-    background: url(images/cloud-heart-crop.png);
+    background-color: #f4d695;
     background-repeat:no-repeat;
     background-size: cover;
-    /**** header always visible
+    width:100%
+    /*? header always visible
     position: -webkit-sticky; 
     position: sticky;
     top: 0; */
 }
 
-body header img {
+body header figure img {
     width: 100%;
-}
-
-.countdown{
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap:nowrap;
 }
 
 h1 {
@@ -39,18 +31,118 @@ h1 {
 p {
     font-size : 1rem;
     margin-inline: 1rem;
-
+    font-family: "arial";
+    text-align:justify
 }
 
-.tx-countdown {
+aside  {
+    position:fixed;
+    right:0;
+    top: 21.18rem;
+    width: 15rem;
+    /* position: -webkit-sticky;
+    position: sticky;
+    bottom:2px; */
+}
+
+footer {
+    background-color: gainsboro;
+}
+
+footer p {
+    padding-top: 1em;
+    font-family: "Comic Sans MS";
+    /* font-size : 1rem; */
+}
+
+footer nav ul {
     display: inline-flex;
 }
-.tx-countdown p {
+
+footer ul li {
+    font-size: 0.7rem;
+    list-style: none;
+    margin: auto;
+    padding: 0.5em;
+}
+
+
+/** Class Elements **/
+/** _____________ **/
+
+.accueil {
+    text-align: center;
+    display:block;
+    width:50rem;
+    padding: 0rem 15rem;
+}
+.accueil p{
+    font-family: "Comic Sans MS";
+    text-align: center; /*! pourquoi je dois le mettre là alors qua c'est dans accueil ?*/
+}
+
+.countdown{ 
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width:100%
+}
+
+.countdown-tx span {
     font-family: 'Staatliches', cursive;
     margin-left: 3rem;
 }
 
-/* .menu{} */
+.img_bisous{
+    border-style: solid;
+	border-color: #ff8790;
+    width: 200px;
+    transition: 2s ease-out;
+}
+
+.img_bisous:hover{
+    transform: perspective(900px) rotateY(65deg)
+}
+
+.img_cloud {
+    /* display:block; */
+    width: 15rem;
+    transition-duration: 2s;
+}
+
+.img_cloud:hover{
+    transform: rotatey(45deg);
+}
+
+.img_couple {
+    /* display:block; */
+	/* float:left; */
+	border-style: solid;
+	border-color: #ff8790;
+	/* width: 15rem;
+	height: 15rem; */
+    width: 200px;
+    transition: width 3s linear;
+}
+
+.img_couple:hover{
+    width: 300px;
+}
+
+.img_heart{
+    width:50px;
+    animation-name:bouncy_heart;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+
+.img_home{
+    transition-duration: 2s;
+}
+
+.img_home:hover{
+    transform: rotatey(180deg);
+}
 
 .menu ul {
     display: inline-flex;
@@ -64,17 +156,10 @@ p {
     font-size: 1.3rem;
     list-style: none;
     /* margin: auto; */
-    background: #f4d695;
-    padding: 0.5em;
     border: 1px solid #ff8790;
     width : 100%;
 }
 
-.menu ul li img{
-    display: inline-flex;
-    list-style: none;
-    width: 5rem
-}
 .menu ul li a {
     text-decoration: none;
     color:black;
@@ -82,68 +167,41 @@ p {
     /* display: medium; */
 }
 
-.accueil {
-    text-align: center;
-    display:block;
-}
-
-#img_couple {
-    /* display:block; */
-	/* float:left; */
-	border-style: solid;
-	border-color: #ff8790;
-	width: 15rem;
-	height: 15rem;
-}
-
-aside img {
-    position:fixed;
-    right:0;
-    top: 21.18rem;
-    width: 15rem;
-    /* position: -webkit-sticky;
-    position: sticky;
-    bottom:2px; */
-}
-
-.wedding-rings {
-    /* display:block; */
-    width: 15rem;
-    transition-duration: 8s;
-}
-
-.wedding-rings:hover{
-    transform: rotate(180deg);
-}
-
-.img_couple {
-    width: 200px;
-    transition: width 3s linear;
-}
-
-.img_couple:hover{
-    width: 300px;
-}
-
-footer {
-    background-color: gainsboro;
-}
-footer p {
-    padding-top: 1em;
-    font-size : 1rem;
-}
-
-footer nav ul {
+.menu ul li img{
     display: inline-flex;
+    list-style: none;
+    width: 5rem
 }
 
-footer ul li {
-    font-size: 0.7rem;
-    list-style: none;
-    margin: auto;
+.tab_rotate_z:hover{
+    transform: rotatez(180deg);
+    background: #ff8790;
     padding: 0.5em;
+
+}
+
+
+/** Key Frames **/
+/** __________ **/
+
+@keyframes bouncy_heart {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 50%) rotate(-25deg) scale(0.5);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+
+/** Media Queries **/
+/** _____________ **/
 
 @media only screen and (max-width: 961px) {
     .menu ul {
-    display: inline-block;
+        display: inline-block;
     }
+}
