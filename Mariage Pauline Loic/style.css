@@ -106,13 +106,13 @@ aside img {
     bottom:2px; */
 }
 
-#wedding-rings {
+.wedding-rings {
     /* display:block; */
     width: 15rem;
     transition-duration: 8s;
 }
 
-#wedding-rings :hover{
+.wedding-rings:hover{
     transform: rotate(180deg);
 }
 
