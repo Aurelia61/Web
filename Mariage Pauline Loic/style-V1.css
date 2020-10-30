@@ -132,7 +132,7 @@ footer ul li {
 .img_heart{
     width:50px;
     animation-name:bouncy_heart;
-    animation-duration:1s;
+    animation-duration:6s;
     animation-iteration-count: infinite;
 }
 
@@ -173,6 +173,10 @@ footer ul li {
     width: 5rem
 }
 
+.tab_programme:hover{
+    background: linear-gradient(blue green) /*! Pourquoi ça ne le fait pas ? */
+}
+
 .tab_rotate_z:hover{
     transform: rotatez(180deg);
     background: #ff8790;
@@ -186,16 +190,15 @@ footer ul li {
 
 @keyframes bouncy_heart {
     0% {
-        transform: translate(0px, 0px);
+        transform: translate(-10em, 0px);
     }
     50% {
-        transform: translate(0px, 50%) rotate(-25deg) scale(0.5);
+        transform: translate(10px, 100%) rotate(180deg);
     }
     100% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(10em, 0px) rotate(0deg);
     }
 }
-
 
 /** Media Queries **/
 /** _____________ **/
