@@ -1,6 +1,15 @@
 /** HTML Semantic Elements **/
 /** ______________________ **/
 
+aside{
+    background-color: #f4d695;
+    position:fixed;
+    right:0;
+    bottom: 0rem;
+    width: 25rem;
+    opacity:80%
+}
+
 body{
     margin:0;
     padding:0
@@ -66,7 +75,7 @@ footer ul li {
 section [class ^=img_]{
     border-style: solid;
 	border-color: #ff8790;
-    width: 3em;
+    width: 15em;
     transition: 2s ease-out;
 }
 
@@ -107,15 +116,15 @@ section [class ^=img_]:hover{
 }
 
 .moving_heart{
-    width:1em; 
+    width:2em; 
     animation-name:bouncy_heart;
-    animation-duration:8s;
+    animation-duration:15s;
     border-color:white; 
     animation-iteration-count: infinite;
 }
 
 .img_home{
-    max-width: 1.5em;
+    max-width: 4em;
     padding: 0em 1em;
     transition-duration: 2s;
 }
@@ -169,13 +178,13 @@ section [class ^=img_]:hover{
 
 @keyframes bouncy_heart {
     0% {
-        transform: translate(-20em, 0em);
+        transform: translate(-50em, 0em);
     }
     50% {
         transform: translate(0em, 1em) rotate(-45deg);
     }
     100% {
-        transform: translate(20em, 0em) rotate(0deg);
+        transform: translate(50em, 0em) rotate(0deg);
     }
 }
 
