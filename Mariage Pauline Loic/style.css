@@ -22,6 +22,9 @@ body header figure img {
     width: 100%;
 }
 
+figure{
+    margin: 0;
+}
 h1 {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
@@ -29,7 +32,7 @@ h1 {
 }
 
 p {
-    font-size : 1rem;
+    font-size : 1.3rem;
     margin-inline: 1rem;
     font-family: "Comic Sans MS";
     text-align:justify
@@ -60,6 +63,18 @@ footer ul li {
 /** Class Elements **/
 /** _____________ **/
 
+section [class ^=img_]{
+    border-style: solid;
+	border-color: #ff8790;
+    width: 3em;
+    transition: 2s ease-out;
+}
+
+section [class ^=img_]:hover{
+    /* transform: perspective(900px) rotateY(65deg) */
+    width: 5em;
+}
+
 .accueil {
     text-align: center;
     display:block;
@@ -67,6 +82,7 @@ footer ul li {
 .accueil p{
     font-family: "Comic Sans MS";
     text-align: center;
+    padding:0rem 3rem
 }
 
 .countdown{ 
@@ -76,8 +92,9 @@ footer ul li {
 }
 
 .countdown p{
-    font-size : 2rem;
+    font-size : 1.5rem;
     text-align: center; 
+    margin-top;:0
 }
 
 .countdown-tx span {
@@ -85,29 +102,21 @@ footer ul li {
     margin-left: 3rem;
 }
 
-section [class ^=img_]{
-    border-style: solid;
-	border-color: #ff8790;
-    width: 15rem;
-    transition: 2s ease-out;
-}
-
-section [class ^=img_]:hover{
-    transform: perspective(900px) rotateY(65deg)
-}
-
 .img_3images{
     text-align: center;
 }
 
-.img_heart{
-    width:50%; /*! Pourquoi ça ne change pas la taille du coeur ?*/
+.moving_heart{
+    width:1em; 
     animation-name:bouncy_heart;
-    animation-duration:3s;
-    border-color:white; /*! Pourquoi j'ai une bordure de couleur ?*/
+    animation-duration:8s;
+    border-color:white; 
+    animation-iteration-count: infinite;
 }
 
 .img_home{
+    max-width: 1.5em;
+    padding: 0em 1em;
     transition-duration: 2s;
 }
 
@@ -120,14 +129,16 @@ section [class ^=img_]:hover{
     width: 100%;
     padding-inline-start: 0px;
     margin-bottom: 0px;
+    font-family: "Comic Sans MS";
 }
 
 .menu ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     list-style: none;
-    /* margin: auto; */
-    border: 1px solid #ff8790;
+    border: 1px solid #f4d695;
     width : 100%;
+    /* margin:0; */
+    background-color: #ff8790;
 }
 
 .menu ul li a {
@@ -142,6 +153,10 @@ section [class ^=img_]:hover{
     width: 5rem
 }
 
+.tab_tx{
+    padding: 1rem
+}
+
 .tab_tx:hover{
     background: #ff8790;
     padding: 0.5em;
@@ -153,11 +168,14 @@ section [class ^=img_]:hover{
 /** __________ **/
 
 @keyframes bouncy_heart {
-    from {
-        transform: translate(-10em, 30em) rotate(-25deg);
+    0% {
+        transform: translate(-20em, 0em);
     }
-    to {
-        transform: translate(0em, 0em) rotate(0deg)(scale(00.5em));
+    50% {
+        transform: translate(0em, 1em) rotate(-45deg);
+    }
+    100% {
+        transform: translate(20em, 0em) rotate(0deg);
     }
 }
 

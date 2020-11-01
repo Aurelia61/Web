@@ -190,13 +190,13 @@ footer ul li {
 
 @keyframes bouncy_heart {
     0% {
-        transform: translate(-10em, 0px);
+        transform: translate(-10em, 0em);
     }
     50% {
-        transform: translate(10px, 100%) rotate(180deg);
+        transform: translate(0em, 1em) rotate(-45deg);
     }
     100% {
-        transform: translate(10em, 0px) rotate(0deg);
+        transform: translate(10em, 0em) rotate(0deg);
     }
 }
 
